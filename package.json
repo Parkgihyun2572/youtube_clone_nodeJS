@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Parkgihyun2572/youtube_clone_nodeJS#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11"
   }
 }
