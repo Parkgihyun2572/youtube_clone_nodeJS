@@ -1,5 +1,15 @@
 # youtube_clone_nodeJS
 
-# npm init
+/ -> Home
+/join -> Join
+/login -> Login
+/search -> Search
 
-make package.json automatically.
+/users/edit -> Edit user
+/users/delete -> Delete user
+
+/video/watch -> Watch Video
+/video/edit -> Edit Video
+/video/delete -> Delete Video
+/video/comments -> Comment on a video
+/video/comments/delete -> Delete a comment of a Video
