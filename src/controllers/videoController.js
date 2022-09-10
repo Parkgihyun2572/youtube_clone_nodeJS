@@ -25,6 +25,8 @@ let videos = [
     },
     ];
 
+export const trending = (req, res) => res.render("home", { pageTitle: "Home", videos });
+
 export const seeVideo = (req, res) => {
     const { id } = req.params;
     const video = videos[id - 1];
@@ -44,7 +46,5 @@ export const postEdit = (req, res) => {
     video.title = title;
     return res.redirect(`/videos/${id}`);
 }
-export const trending = (req, res) => res.render("home", { pageTitle: "Home", videos });
-export const search = (req, res) => res.send("Search Video");
+
 export const uploadVideo = (req, res) => res.send("Upload Video");
-export const deleteVideo = (req, res) => res.send("Delete Video");
