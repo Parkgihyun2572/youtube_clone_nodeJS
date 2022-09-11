@@ -1,3 +1,6 @@
+//connet datebase at server
+import "./db";
+
 import express from "express";
 import morgan from "morgan";
 import globalRouter from "./routers/globalRouter";
