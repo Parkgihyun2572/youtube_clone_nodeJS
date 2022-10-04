@@ -5,9 +5,10 @@ export const home = async (req, res) => {
     return res.render("home", { pageTitle: "Home", videos });
 };
 
-export const seeVideo = (req, res) => {
+export const seeVideo = async (req, res) => {
     const { id } = req.params;
-    return res.render("watch", { pageTitle: `Watching`});
+    const video = await Video.findById(id);
+    return res.render("watch", { pageTitle: video.title, video});
 };
 
 export const editVideo = (req, res) => {
